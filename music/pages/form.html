@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sturbuzz</title>
+</head>
+<body>
+    <header>
+        <h1>The Sturbuzz Bean Machine</h1>
+        <h2>Fill out the form below and click "order now" to order</h2>
+    </header>
+    
+    <main>
+        <form action="">
+            <label for="bean">Choose your beans: </label>
+            <select name="bean" id="bean">
+                <option value="">House Blend</option>
+            </select>
+
+            <p>Type:
+                <br>
+                <input name="type" id="whole" type="radio">
+                <label for="whole">Whole bean</label>
+                <br>
+                <input name="type" id="Ground" type="radio" checked>
+                <label for="Ground">Ground</label>
+            </p>
+
+            <label for="bag">Number of bags: </label>
+            <input id="bag" type="number">
+            <br><br>
+            <label for="arrive">Must arrive by date: </label>
+            <input id="arrive" type="date">
+
+            <p>Extras:
+                <br>
+                <input name="extras" id="gift" type="checkbox">
+                <label for="gift">Gift wrap</label>
+                <br>
+                <input name="extras" id="catalog" type="checkbox" checked>
+                <label for="catalog">Include catalog with order</label>
+            </p>
+
+            <p>Ship to:
+                <br>
+                <label for="name">Name: </label>
+                <input id="name" type="text">
+                <br>
+                <label for="address">Address: </label>
+                <input id="address" type="text">
+                <br>
+                <label for="city">City: </label>
+                <input id="city" type="text">
+                <br>
+                <label for="state">State: </label>
+                <input id="state" type="text">
+                <br>
+                <label for="zip">Zip: </label>
+                <input id="zip" type="text">
+                <br>
+                <label for="phone">Phone: </label>
+                <input id="phone" type="text">
+            </p>
+
+            <label for="comment">Customer Comments: </label><br>
+            <textarea name="" id="comment"></textarea>
+            <br><br>
+            <input type="submit" value="Order Now">
+        </form>
+    </main>
+</body>
+</html>
