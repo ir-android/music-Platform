@@ -1,0 +1,43 @@
+@import url(material-theme/dark.css);
+
+.mini-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 1.2rem;
+
+  background: var(--md-sys-color-surface);
+  border-top: 1px solid var(--md-sys-color-outline);
+
+  text-decoration: none;
+  color: var(--md-sys-color-on-surface);
+}
+
+.mini-info strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.mini-info span {
+  font-size: 0.8rem;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.mini-play {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+
+  border: none;
+  border-radius: 50%;
+
+  width: 42px;
+  height: 42px;
+
+  font-size: 1.2rem;
+}

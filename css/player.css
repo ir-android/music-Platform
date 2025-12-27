@@ -1,0 +1,102 @@
+@import url(material-theme/dark.css);
+
+body {
+  background: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  margin: 0;
+  font-family: system-ui;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.player-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-header a {
+  color: var(--md-sys-color-on-surface);
+  text-decoration: none;
+}
+
+.artwork .cover {
+  width: 260px;
+  height: 260px;
+  background: var(--md-sys-color-surface-variant);
+  border-radius: 24px;
+  margin: 2rem 0;
+}
+
+.track-info h2 {
+  color: var(--md-sys-color-on-surface);
+  margin: 0;
+  text-align: center;
+}
+
+.track-info p {
+  color: var(--md-sys-color-on-surface-variant);
+  margin-top: .3rem;
+  text-align: center;
+}
+
+.seek {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.seek span {
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.bar {
+  flex: 1;
+  height: 6px;
+  background: var(--md-sys-color-surface-variant);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 35%;
+  height: 100%;
+  background: var(--md-sys-color-primary);
+}
+
+.controls {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ghost {
+  background: transparent;
+  border: none;
+  color: var(--md-sys-color-on-surface);
+  font-size: 1.5rem;
+}
+
+.play {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  font-size: 1.8rem;
+}
+
+img{
+  width: 260px;
+  height: 260px;
+}

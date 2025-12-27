@@ -1,0 +1,45 @@
+@import url(material-theme/dark.css);
+
+body {
+  margin: 0;
+  background: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  font-family: system-ui;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background: var(--md-sys-color-background);
+  z-index: 10;
+}
+
+.search-field {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--md-sys-color-outline);
+
+  background: var(--md-sys-color-surface-variant);
+  color: var(--md-sys-color-on-surface);
+}
+
+.results {
+  padding: 1rem;
+}
+
+.track {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--md-sys-color-outline);
+}
+
+.track strong {
+  display: block;
+  color: var(--md-sys-color-on-surface);
+}
+
+.track span {
+  font-size: 0.85rem;
+  color: var(--md-sys-color-on-surface-variant);
+}

@@ -1,0 +1,42 @@
+@import url(material-theme/dark.css);
+
+body {
+  background: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  margin: 0;
+  font-family: system-ui;
+}
+
+.playlist {
+  padding: 1.5rem;
+}
+
+.track-list {
+  margin-top: 1.5rem;
+}
+
+.track {
+  background: var(--md-sys-color-surface);
+  border: 1px solid var(--md-sys-color-outline);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+
+  cursor: grab;
+}
+
+.track span {
+  color: var(--md-sys-color-on-surface);
+}
+
+.track small {
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.track.dragging {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
