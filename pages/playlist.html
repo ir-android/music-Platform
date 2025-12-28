@@ -10,37 +10,46 @@
 
 <body dir="rtl" class="md-sys-color">
 
-<main class="playlist">
+<div class="playlist">
 
   <header>
+
     <h1>My Playlist</h1>
-    <nav class="main-nav" dir="ltr">
+
+    <nav class="main-nav" dir="ltr" aria-label="Main navigation">
       <a href="../index.html">home</a>
       <a href="playlist.html" class="active">PlayList</a>
       <a href="player.html">now playing</a>
       <a href="login.html">login</a>
     </nav>
+
   </header>
 
-  <section class="track-list">
+  <main>
 
-    <div class="track" draggable="true">
-      <span>Shab</span>
-      <small>Hossein</small>
-    </div>
+    <section class="track-list">
+      <h2 class="visually-hidden">Tracks</h2>
 
-    <div class="track" draggable="true">
-      <span>Baran</span>
-      <small>Hossein</small>
-    </div>
+      <article class="track" draggable="true">
+        <span>Shab</span>
+        <small>Hossein</small>
+      </article>
 
-    <div class="track" draggable="true">
-      <span>Khial</span>
-      <small>Hossein</small>
-    </div>
+      <article class="track" draggable="true">
+        <span>Baran</span>
+        <small>Hossein</small>
+      </article>
 
-  </section>
+      <article class="track" draggable="true">
+        <span>Khial</span>
+        <small>Hossein</small>
+      </article>
 
-</main>
+    </section>
+
+  </main>
+
+</div>
+
 </body>
 </html>

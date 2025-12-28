@@ -24,6 +24,7 @@ body {
 }
 
 .search-field {
+  display: flex;
   flex: 1;
   padding: 0.7rem 1rem;
   background: var(--md-sys-color-surface-variant);
