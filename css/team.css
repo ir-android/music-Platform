@@ -1,4 +1,5 @@
 @import url(theme.css);
+@import url(table.css);
 
 body {
   background: var(--color-background);

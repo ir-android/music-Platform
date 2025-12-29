@@ -1,4 +1,5 @@
 @import url(material-theme/dark.css);
+@import url(table.css);
 
 body {
   background: var(--md-sys-color-background);
