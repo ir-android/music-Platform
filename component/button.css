@@ -1,0 +1,53 @@
+.btn-m3 {
+  font-family: var(--md-font-family, sans-serif);
+  font-weight: 500;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 1.2;
+  transition: background-color .2s, box-shadow .2s, border .2s;
+}
+
+.btn-m3-xs { padding: 0.4rem 0.8rem; font-size: 0.75rem; }
+.btn-m3-sm { padding: 0.5rem 0.9rem; font-size: 0.875rem; }
+.btn-m3-md { padding: 0.6rem 1.0rem; font-size: 1rem; }
+.btn-m3-lg { padding: 0.75rem 1.2rem; font-size: 1.125rem; }
+.btn-m3-xl { padding: 0.9rem 1.4rem; font-size: 1.25rem; }
+
+.btn-m3-filled {
+  background-color: var(--md-primary, #6750A4);
+  color: var(--md-on-primary, #FFFFFF);
+  box-shadow: none;
+}
+.btn-m3-filled:hover { background-color: #593897; }
+
+.btn-m3-tonal {
+  background-color: var(--md-secondary-container, #EADDFF);
+  color: var(--md-on-secondary-container, #21005D);
+}
+.btn-m3-tonal:hover { background-color: #D6C2FF; }
+
+.btn-m3-elevated {
+  background-color: var(--md-surface, #FFFFFF);
+  color: var(--md-primary, #6750A4);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.btn-m3-elevated:hover { box-shadow: 0 4px 8px rgba(0,0,0,0.25); }
+
+.btn-m3-outlined {
+  background: transparent;
+  color: var(--md-primary, #6750A4);
+  border: 1px solid var(--md-outline, #79747E);
+}
+.btn-m3-outlined:hover { background: rgba(103,80,164,0.08); }
+
+.btn-m3-text {
+  background: transparent;
+  color: var(--md-primary, #6750A4);
+  border: none;
+}
+.btn-m3-text:hover { background: rgba(103,80,164,0.08); }
