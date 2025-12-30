@@ -94,3 +94,70 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: var(--color-primary-hover);
 }
+
+.m3-textfield {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-family: system-ui;
+  margin: 16px 0;
+}
+
+.m3-textfield input {
+  width: 100%;
+  padding: 18px 14px 14px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--md-sys-color-on-surface);
+  font-size: var(--md-sys-typescale-body-large-size);
+}
+
+.m3-outline {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  border: 1.5px solid var(--md-sys-color-outline);
+  pointer-events: none;
+  transition: .2s;
+}
+
+.m3-label {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--md-sys-color-surface);
+  padding: 0 6px;
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: var(--md-sys-typescale-body-medium-size);
+  transition: .2s;
+  pointer-events: none;
+}
+
+.m3-textfield input:focus ~ .m3-label,
+.m3-textfield input:not(:placeholder-shown) ~ .m3-label {
+  top: 0;
+  transform: translateY(-50%) scale(.85);
+  color: var(--md-sys-color-primary);
+}
+
+/* Hover */
+.m3-textfield:hover .m3-outline {
+  border-color: var(--md-sys-color-on-surface);
+}
+
+/* Focus */
+.m3-textfield input:focus ~ .m3-outline {
+  border-color: var(--md-sys-color-primary);
+  border-width: 2px;
+}
+
+/* Disabled */
+.m3-textfield input:disabled {
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.m3-textfield input:disabled ~ .m3-outline {
+  opacity: .4;
+}

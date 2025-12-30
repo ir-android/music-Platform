@@ -100,3 +100,20 @@ img{
   width: 260px;
   height: 260px;
 }
+
+.m3-checkbox input:checked + .box {
+  background: var(--md-sys-color-primary);
+  border-color: var(--md-sys-color-primary);
+}
+
+.m3-checkbox:hover .box {
+  border-color: var(--md-sys-color-primary);
+}
+
+.m3-checkbox input:focus + .box {
+  outline: 2px solid var(--md-sys-color-primary);
+}
+
+.m3-checkbox input:disabled + .box {
+  opacity: .4;
+}
